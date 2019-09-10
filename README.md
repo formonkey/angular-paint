@@ -12,7 +12,7 @@ to have a fast rhythm of iterations, incorporating new functionalities like filt
 ## Architecture
 
 ### ITCSS
-Stands for Inverted Triangle CSS and it helps yo to organize your project SCSS files in such a way that you can
+ITCSS Stands for Inverted Triangle CSS and it helps yo to organize your project SCSS files in such a way that you can
 better deal with (not always easy-to-deal with) CSS specifics like global, namespaces, cascade and selector 
 specificity.
 
