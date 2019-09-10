@@ -1,4 +1,4 @@
-#Paint editor
+# Paint editor
 From the client it has been proposed to make an application similar to windows paint and
 You should have only these actions:
 
@@ -10,9 +10,9 @@ For this project it has been requested to propose an architecture taking into ac
 to be able to distribute as a multi-device app in the near future. This app goes
 to have a fast rhythm of iterations, incorporating new functionalities like filters, etc.
 
-##Architecture
+## Architecture
 
-###ITCSS
+### ITCSS
 Stands for Inverted Triangle CSS and it helps yo to organize your project SCSS files in such a way that you can
 better deal with (not always easy-to-deal with) CSS specifics like global, namespaces, cascade and selector 
 specificity.
@@ -40,9 +40,9 @@ low-specificity selectors to more specific ones.
 
 ![triangle-reach](./src/assets/img/itcss-key-metrics.svg)
 
-###Framework
+### Framework
 
-####Angular 8
+#### Angular 8
 As a frontend framework, all of them have been taken into account, whether react, vuejs, angular or do it directly
 with EcmaScript (VanillaJS). He has opted for Angular for its easy reuse of code with Ionic. In this way
 We could have a hybrid mobile application in a simple way.
@@ -58,21 +58,21 @@ As a high rate of iterations is required, it has been pulled by a simpler mobile
 
 Angular 8 apart brings great performance improvements with its previous versions:
 
-#####Angular 7.2.x
+##### Angular 7.2.x
 ![a7-performance](./src/assets/img/a7-performance.png);
 
-######Angular 8.x
+###### Angular 8.x
 ![a8-performance](./src/assets/img/a8-performance.png)
 
 El speed index inicial de 2.4 es bastante bueno y con una compilación lazy y AOT se reduciría a menos de 2 segundos.
 
-###Development
+### Development
 
-####Running app
+#### Running app
 Run `npm run start`
 
-####Running TDD
+#### Running TDD
 Run `npm run tdd`
 
-####Running unit tests
+#### Running unit tests
 Run `npm run test` to execute the unit tests via [Karma](https://karma-runner.github.io).
