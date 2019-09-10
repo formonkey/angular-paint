@@ -63,7 +63,7 @@ Angular 8 apart brings great performance improvements with its previous versions
 ###### Angular 8.x
 ![a8-performance](./src/assets/img/a8-performance.png)
 
-El speed index inicial de 2.4 es bastante bueno y con una compilación lazy y AOT se reduciría a menos de 2 segundos.
+The initial speed index of 2.4 is quite good and with a lazy and AOT compilation it would be reduced to less than 2 seconds
 
 ### Development
 
