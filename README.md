@@ -1,6 +1,5 @@
 # Paint editor
-From the client it has been proposed to make an application similar to windows paint and
-You should have only these actions:
+From the client it has been proposed to make an application similar to windows paint that only have these actions:
 
 - Undo / redo
 - Colour selection
@@ -58,7 +57,7 @@ As a high rate of iterations is required, it has been pulled by a simpler mobile
 
 Angular 8 apart brings great performance improvements with its previous versions:
 
-##### Angular 7.2.x
+###### Angular 7.2.x
 ![a7-performance](./src/assets/img/a7-performance.png);
 
 ###### Angular 8.x
@@ -76,3 +75,6 @@ Run `npm run tdd`
 
 #### Running unit tests
 Run `npm run test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+##### Coverage
+![covearge](./src/assets/img/coverage.png)
