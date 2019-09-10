@@ -1,0 +1,50 @@
+@import "~src/assets/styles/settings/_colors";
+
+:host {
+    &::ng-deep {
+        apa-popover {
+            .is-popover-active {
+                em {
+                    color: $grey-dark !important;
+                }
+            }
+
+            em {
+                & + .badge {
+                    top: -10px;
+                    width: 10px;
+                    height: 10px;
+                    margin-left: 20px;
+                    position: relative;
+                    border-radius: 25px;
+                }
+            }
+
+            .colors {
+                display: flex;
+
+                .color {
+                    margin: 5px;
+                    padding: 2px;
+                    cursor: pointer;
+                    border-radius: 25px;
+                    border: 2px solid transparent;
+
+                    .element {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 25px;
+                    }
+
+                    &.is-active {
+                        border: 2px solid $grey-light;
+                    }
+
+                    &:hover {
+                        border: 2px solid $grey;
+                    }
+                }
+            }
+        }
+    }
+}

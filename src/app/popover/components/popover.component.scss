@@ -1,0 +1,15 @@
+@import "~src/assets/styles/settings/_colors";
+
+:host {
+    .popover-content {
+        display: none;
+        left: 150% !important;
+        bottom: 25% !important;
+    }
+
+    .is-popover-active {
+        .popover-content {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+<div class="columns">
+    <div class="column is-1">
+        <div class="logo">
+            <img src="/assets/img/a@2x.png" alt="logo">
+        </div>
+        <div class="actions">
+            <em class="fas fa-undo"
+                [class.is-disabled]="!canvas?.canUndo"
+                (click)="canvas?.canUndo && onUndo()">
+            </em>
+            <em class="fas fa-undo reverse"
+                [class.is-disabled]="!canvas?.canRedo"
+                (click)="canvas?.canRedo && onRedo()">
+            </em>
+            <apa-palette (onSetColor)="onSetColor($event)"></apa-palette>
+            <apa-brush (onSetSize)="onSetSize($event)"></apa-brush>
+        </div>
+    </div>
+    <div class="column">
+        <apa-canvas></apa-canvas>
+    </div>
+</div>

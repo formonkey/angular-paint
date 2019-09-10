@@ -1,0 +1,22 @@
+<apa-popover class="colors"
+             [data]="colors"
+             (onTrigger)="onOpen()"
+             [isActive]="isActive">
+    <ng-template #trigger>
+        <em class="fas fa-palette"
+            (click)="onOpen()">
+        </em>
+        <div class="badge" [ngStyle]="{background: currentColor}"></div>
+    </ng-template>
+
+    <ng-template #content
+                 let-element="model">
+        <div class="color"
+             [class.is-active]="element?.color === currentColor">
+            <div class="element"
+                 [ngStyle]="{ background: element?.color }"
+                 (click)="onSelect(element)">
+            </div>
+        </div>
+    </ng-template>
+</apa-popover>

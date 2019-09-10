@@ -1,0 +1,16 @@
+<div class="popover is-popover-right"
+     [class.is-popover-active]="isActive">
+
+    <ng-container [ngTemplateOutlet]="trigger"></ng-container>
+
+    <div class="popover-content"
+         (mouseleave)="isActive && fireTrigger.emit()">
+        <div class="{{ className }}">
+            <ng-container *ngFor="let element of data">
+                <ng-container [ngTemplateOutlet]="content"
+                              [ngTemplateOutletContext]="{ model: element }">
+                </ng-container>
+            </ng-container>
+        </div>
+    </div>
+</div>

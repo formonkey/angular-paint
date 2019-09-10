@@ -1,0 +1,20 @@
+<apa-popover class="sizes"
+             [data]="sizes"
+             (onTrigger)="onOpen()"
+             [isActive]="isActive">
+    <ng-template #trigger>
+        <em class="fas fa-paint-brush"
+            (click)="onOpen()">
+        </em>
+    </ng-template>
+
+    <ng-template #content
+                 let-element="model">
+        <div class="size-item"
+             (click)="onSelect(element.name)">
+            <div class="line {{ element.name }}"
+                 [class.is-active]="element.name === currentSize">
+            </div>
+        </div>
+    </ng-template>
+</apa-popover>

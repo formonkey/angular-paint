@@ -1,0 +1,50 @@
+@import "~src/assets/styles/settings/_colors";
+
+:host {
+    &::ng-deep {
+        apa-popover {
+            .is-popover-active {
+                em {
+                    color: $grey-dark !important;
+                }
+            }
+
+            .sizes {
+                width: 200px;
+                height: 90px;
+
+                .size-item {
+                    width: 100%;
+                    height: 30px;
+                    display: block;
+                    padding: 10px 0;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: $grey-light;
+                    }
+
+                    .line {
+                        background: $grey;
+
+                        &.is-active {
+                            background: $grey-dark;
+                        }
+
+                        &.small {
+                            height: 5px;
+                        }
+
+                        &.medium {
+                            height: 10px;
+                        }
+
+                        &.large {
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
